@@ -1,6 +1,11 @@
 import java.io.Serializable;
 
 public class Car implements Serializable {
+    /*
+    В данной версии необходимо сделать так, чтобы количество полей объекта зависило
+    от того, сколько значени мы хотим указать.
+     */
+
 
     final static String path = "D:\\Java\\MyProjects\\CarBook\\CarBook_2.0\\src\\DataBase.bin";
     long id;
@@ -13,6 +18,8 @@ public class Car implements Serializable {
         this.model = model;
         this.speed = speed;
     }
+
+
 
     public String getBrand() {
         return brand;
